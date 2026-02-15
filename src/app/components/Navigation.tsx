@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-const logo = `${import.meta.env.BASE_URL}assets/hibrid-logo.svg`;
+const logo = `${import.meta.env.BASE_URL}assets/hibrid-logo.png`;
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
