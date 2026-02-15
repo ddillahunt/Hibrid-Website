@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Smartphone, Send, CheckCircle } from 'lucide-react';
 import { toast } from 'sonner';
 const resiApp1 = "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=600&fit=crop";
@@ -13,19 +13,6 @@ export default function Resident() {
     requestType: '',
     message: '',
   });
-
-  // Handle scroll to section on page load
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     setFormData({

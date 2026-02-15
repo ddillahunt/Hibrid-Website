@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Mail, Phone, Clock, ChevronDown } from 'lucide-react';
 import { toast } from 'sonner';
 
@@ -13,19 +13,6 @@ export default function Contact() {
   });
 
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(null);
-
-  // Handle scroll to section on page load
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();

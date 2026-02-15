@@ -1,21 +1,6 @@
 import { Trash2, Building2, CalendarCheck, Recycle, Smartphone, Truck, Users } from 'lucide-react';
 
-import { useEffect } from 'react';
-
 export default function Services() {
-  // Handle scroll to section on page load
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
-
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}

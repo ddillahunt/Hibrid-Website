@@ -1,22 +1,9 @@
-import { useEffect } from 'react';
 import { Building2, Smartphone, Monitor } from 'lucide-react';
 import dashboardImage from '../../assets/dashboard.png';
 const resiApp1 = "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=600&fit=crop";
 const resiApp2 = "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=300&h=600&fit=crop";
 
 export default function PropertyManagement() {
-  // Handle scroll to section on page load
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
 
   return (
     <div className="min-h-screen bg-[#7FB54C]">

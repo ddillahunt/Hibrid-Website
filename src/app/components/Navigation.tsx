@@ -257,7 +257,6 @@ export default function Navigation() {
                   >
                     <Link
                       to={link.path}
-                      onClick={() => window.scrollTo(0, 0)}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
                           ? 'text-black font-bold'
@@ -366,7 +365,6 @@ export default function Navigation() {
                   >
                     <Link
                       to={link.path}
-                      onClick={() => window.scrollTo(0, 0)}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
                           ? 'text-black font-bold'
@@ -449,7 +447,6 @@ export default function Navigation() {
                               key={dropdownLink.id}
                               to={`/${dropdownLink.id}`}
                               onClick={() => {
-                                window.scrollTo(0, 0);
                                 setPropertyDropdownOpen(false);
                                 setPropertyDropdownLocked(false);
                               }}
@@ -754,7 +751,6 @@ export default function Navigation() {
                               key={dropdownLink.id}
                               to={`/${dropdownLink.id}`}
                               onClick={() => {
-                                window.scrollTo(0, 0);
                                 setMobilePropertyOpen(false);
                                 setIsOpen(false);
                               }}

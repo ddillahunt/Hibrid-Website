@@ -2,10 +2,6 @@ import { Link } from 'react-router-dom';
 import { Mail, Phone } from 'lucide-react';
 
 export default function Footer() {
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  };
-
   return (
     <footer className="bg-[#7FB54C] text-black">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -20,19 +16,19 @@ export default function Footer() {
           <div>
             <h4 className="text-black mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/" className="hover:text-black transition-colors" onClick={handleLinkClick}>Home</Link></li>
-              <li><Link to="/services" className="hover:text-black transition-colors" onClick={handleLinkClick}>Services</Link></li>
-              <li><Link to="/property-management" className="hover:text-black transition-colors" onClick={handleLinkClick}>Property Management</Link></li>
-              <li><Link to="/about" className="hover:text-black transition-colors" onClick={handleLinkClick}>About Us</Link></li>
-              <li><Link to="/contact" className="hover:text-black transition-colors" onClick={handleLinkClick}>Contact</Link></li>
+              <li><Link to="/" className="hover:text-black transition-colors">Home</Link></li>
+              <li><Link to="/services" className="hover:text-black transition-colors">Services</Link></li>
+              <li><Link to="/property-management" className="hover:text-black transition-colors">Property Management</Link></li>
+              <li><Link to="/about" className="hover:text-black transition-colors">About Us</Link></li>
+              <li><Link to="/contact" className="hover:text-black transition-colors">Contact</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-black mb-4">For Porters</h4>
             <ul className="space-y-2 text-sm">
-              <li><Link to="/become-porter" className="hover:text-black transition-colors" onClick={handleLinkClick}>Become a Porter</Link></li>
-              <li><Link to="/privacy" className="hover:text-black transition-colors" onClick={handleLinkClick}>Privacy Policy</Link></li>
+              <li><Link to="/become-porter" className="hover:text-black transition-colors">Become a Porter</Link></li>
+              <li><Link to="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link></li>
             </ul>
           </div>
 

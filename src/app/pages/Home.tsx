@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom';
 import { Smartphone, Eye, Monitor, MapPin } from 'lucide-react';
-import { useEffect } from 'react';
 import tnaaLogo from '../../assets/partners/tnaa.png';
 import taaLogo from '../../assets/partners/taa.png';
 import faaLogo from '../../assets/partners/faa.png';
@@ -13,19 +12,6 @@ import chattahoocheeLogo from '../../assets/partners/chattahoochee.png';
 import atlantaLogo from '../../assets/partners/atlanta.png';
 
 export default function Home() {
-  // Handle scroll to section on page load
-  useEffect(() => {
-    const hash = window.location.hash.substring(1);
-    if (hash) {
-      setTimeout(() => {
-        const element = document.getElementById(hash);
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
-        }
-      }, 100);
-    }
-  }, []);
-
   const partnerLogos = [
     { src: tnaaLogo, alt: 'Tennessee Apartment Association' },
     { src: taaLogo, alt: 'Texas Apartment Association' },
@@ -235,7 +221,6 @@ export default function Home() {
           </p>
           <Link
             to="/contact"
-            onClick={() => window.scrollTo(0, 0)}
             className="inline-block bg-[#6FA03D] text-black px-8 py-3 rounded-lg hover:bg-[#5F8A33] transition-colors font-semibold"
           >
             Contact Us
