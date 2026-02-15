@@ -70,114 +70,44 @@ export default function Navigation() {
     { id: 'how-to-use', label: 'How to use Valet Trash' },
   ];
 
-  const handleSectionScroll = (sectionId: string) => {
-    if (location.pathname !== '/') {
-      // Navigate to home first, then scroll
-      window.location.href = `/Hibrid-Website/#${sectionId}`;
-    } else {
-      // Already on home, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handleSectionNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/#${sectionId}`;
     setHomeDropdownOpen(false);
     setHomeDropdownLocked(false);
   };
 
-  const handleServicesScroll = (sectionId: string) => {
-    if (location.pathname !== '/services') {
-      // Navigate to services first, then scroll
-      window.location.href = `/Hibrid-Website/services#${sectionId}`;
-    } else {
-      // Already on services, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handleServicesNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/services#${sectionId}`;
     setServicesDropdownOpen(false);
     setServicesDropdownLocked(false);
   };
 
-  const handlePorterScroll = (sectionId: string) => {
-    if (location.pathname !== '/become-porter') {
-      // Navigate to become-porter first, then scroll
-      window.location.href = `/Hibrid-Website/become-porter#${sectionId}`;
-    } else {
-      // Already on become-porter, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handlePorterNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/become-porter#${sectionId}`;
     setPorterDropdownOpen(false);
     setPorterDropdownLocked(false);
   };
 
-  const handleAboutScroll = (sectionId: string) => {
-    if (location.pathname !== '/about') {
-      // Navigate to about first, then scroll
-      window.location.href = `/Hibrid-Website/about#${sectionId}`;
-    } else {
-      // Already on about, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handleAboutNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/about#${sectionId}`;
     setAboutDropdownOpen(false);
     setAboutDropdownLocked(false);
   };
 
-  const handleContactScroll = (sectionId: string) => {
-    if (location.pathname !== '/contact') {
-      // Navigate to contact first, then scroll
-      window.location.href = `/Hibrid-Website/contact#${sectionId}`;
-    } else {
-      // Already on contact, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handleContactNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/contact#${sectionId}`;
     setContactDropdownOpen(false);
     setContactDropdownLocked(false);
   };
 
-  const handlePropertyScroll = (sectionId: string) => {
-    if (location.pathname !== '/property-management') {
-      // Navigate to property-management first, then scroll
-      window.location.href = `/Hibrid-Website/property-management#${sectionId}`;
-    } else {
-      // Already on property-management, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handlePropertyNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/property-management#${sectionId}`;
     setPropertyDropdownOpen(false);
     setPropertyDropdownLocked(false);
   };
 
-  const handleResidentScroll = (sectionId: string) => {
-    if (location.pathname !== '/resident') {
-      // Navigate to resident first, then scroll
-      window.location.href = `/Hibrid-Website/resident#${sectionId}`;
-    } else {
-      // Already on resident, just scroll
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'auto' });
-      }
-    }
-    // Close dropdown after selection
+  const handleResidentNav = (sectionId: string) => {
+    window.location.href = `/Hibrid-Website/resident#${sectionId}`;
     setResidentDropdownOpen(false);
     setResidentDropdownLocked(false);
   };
@@ -244,7 +174,7 @@ export default function Navigation() {
                         {homeDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handleSectionScroll(dropdownLink.id)}
+                            onClick={() => handleSectionNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -298,7 +228,7 @@ export default function Navigation() {
                         {servicesDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handleServicesScroll(dropdownLink.id)}
+                            onClick={() => handleServicesNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -353,7 +283,7 @@ export default function Navigation() {
                         {porterDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handlePorterScroll(dropdownLink.id)}
+                            onClick={() => handlePorterNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -407,7 +337,7 @@ export default function Navigation() {
                         {aboutDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handleAboutScroll(dropdownLink.id)}
+                            onClick={() => handleAboutNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -462,7 +392,7 @@ export default function Navigation() {
                         {contactDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handleContactScroll(dropdownLink.id)}
+                            onClick={() => handleContactNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -530,7 +460,7 @@ export default function Navigation() {
                           ) : (
                             <button
                               key={dropdownLink.id}
-                              onClick={() => handlePropertyScroll(dropdownLink.id)}
+                              onClick={() => handlePropertyNav(dropdownLink.id)}
                               className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                             >
                               {dropdownLink.label}
@@ -585,7 +515,7 @@ export default function Navigation() {
                         {residentDropdownLinks.map((dropdownLink) => (
                           <button
                             key={dropdownLink.id}
-                            onClick={() => handleResidentScroll(dropdownLink.id)}
+                            onClick={() => handleResidentNav(dropdownLink.id)}
                             className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
@@ -647,7 +577,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handleSectionScroll(dropdownLink.id);
+                              handleSectionNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -682,7 +612,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handleServicesScroll(dropdownLink.id);
+                              handleServicesNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -717,7 +647,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handlePorterScroll(dropdownLink.id);
+                              handlePorterNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -752,7 +682,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handleAboutScroll(dropdownLink.id);
+                              handleAboutNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -787,7 +717,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handleContactScroll(dropdownLink.id);
+                              handleContactNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -836,7 +766,7 @@ export default function Navigation() {
                             <button
                               key={dropdownLink.id}
                               onClick={() => {
-                                handlePropertyScroll(dropdownLink.id);
+                                handlePropertyNav(dropdownLink.id);
                                 setIsOpen(false);
                               }}
                               className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
@@ -872,7 +802,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => {
-                              handleResidentScroll(dropdownLink.id);
+                              handleResidentNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
                             className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
