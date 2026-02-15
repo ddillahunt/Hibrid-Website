@@ -73,7 +73,7 @@ export default function Navigation() {
   const handleSectionScroll = (sectionId: string) => {
     if (location.pathname !== '/') {
       // Navigate to home first, then scroll
-      window.location.href = `/#${sectionId}`;
+      window.location.href = `/Hibrid-Website/#${sectionId}`;
     } else {
       // Already on home, just scroll
       const element = document.getElementById(sectionId);
@@ -89,7 +89,7 @@ export default function Navigation() {
   const handleServicesScroll = (sectionId: string) => {
     if (location.pathname !== '/services') {
       // Navigate to services first, then scroll
-      window.location.href = `/services#${sectionId}`;
+      window.location.href = `/Hibrid-Website/services#${sectionId}`;
     } else {
       // Already on services, just scroll
       const element = document.getElementById(sectionId);
@@ -105,7 +105,7 @@ export default function Navigation() {
   const handlePorterScroll = (sectionId: string) => {
     if (location.pathname !== '/become-porter') {
       // Navigate to become-porter first, then scroll
-      window.location.href = `/become-porter#${sectionId}`;
+      window.location.href = `/Hibrid-Website/become-porter#${sectionId}`;
     } else {
       // Already on become-porter, just scroll
       const element = document.getElementById(sectionId);
@@ -121,7 +121,7 @@ export default function Navigation() {
   const handleAboutScroll = (sectionId: string) => {
     if (location.pathname !== '/about') {
       // Navigate to about first, then scroll
-      window.location.href = `/about#${sectionId}`;
+      window.location.href = `/Hibrid-Website/about#${sectionId}`;
     } else {
       // Already on about, just scroll
       const element = document.getElementById(sectionId);
@@ -137,7 +137,7 @@ export default function Navigation() {
   const handleContactScroll = (sectionId: string) => {
     if (location.pathname !== '/contact') {
       // Navigate to contact first, then scroll
-      window.location.href = `/contact#${sectionId}`;
+      window.location.href = `/Hibrid-Website/contact#${sectionId}`;
     } else {
       // Already on contact, just scroll
       const element = document.getElementById(sectionId);
@@ -153,7 +153,7 @@ export default function Navigation() {
   const handlePropertyScroll = (sectionId: string) => {
     if (location.pathname !== '/property-management') {
       // Navigate to property-management first, then scroll
-      window.location.href = `/property-management#${sectionId}`;
+      window.location.href = `/Hibrid-Website/property-management#${sectionId}`;
     } else {
       // Already on property-management, just scroll
       const element = document.getElementById(sectionId);
@@ -169,7 +169,7 @@ export default function Navigation() {
   const handleResidentScroll = (sectionId: string) => {
     if (location.pathname !== '/resident') {
       // Navigate to resident first, then scroll
-      window.location.href = `/resident#${sectionId}`;
+      window.location.href = `/Hibrid-Website/resident#${sectionId}`;
     } else {
       // Already on resident, just scroll
       const element = document.getElementById(sectionId);
