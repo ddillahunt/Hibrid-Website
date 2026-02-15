@@ -1,7 +1,7 @@
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useState } from 'react';
-const logo = `${import.meta.env.BASE_URL}assets/hibrid-logo.png`;
+const logo = `${import.meta.env.BASE_URL}assets/hibrid-logo-transparent.png`;
 
 export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -126,7 +126,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Hibrid Trash Solutions" className="h-12 scale-x-110 mix-blend-multiply" />
+            <img src={logo} alt="Hibrid Trash Solutions" className="h-12 scale-x-110" />
           </Link>
 
           {/* Desktop Navigation */}
