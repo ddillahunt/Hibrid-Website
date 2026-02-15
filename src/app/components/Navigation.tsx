@@ -151,8 +151,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -205,8 +205,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -259,8 +259,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -313,8 +313,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -367,8 +367,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -421,8 +421,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -489,8 +489,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -530,8 +530,8 @@ export default function Navigation() {
                   to={link.path}
                   className={`px-3 py-2 rounded-md transition-colors ${
                     isActive(link.path)
-                      ? 'text-black font-bold'
-                      : 'text-black font-bold hover:text-gray-600'
+                      ? 'text-black'
+                      : 'text-black hover:text-gray-600'
                   }`}
                 >
                   {link.label}
@@ -560,8 +560,8 @@ export default function Navigation() {
                       onClick={() => setMobileHomeOpen(!mobileHomeOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -595,8 +595,8 @@ export default function Navigation() {
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -630,8 +630,8 @@ export default function Navigation() {
                       onClick={() => setMobilePorterOpen(!mobilePorterOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -665,8 +665,8 @@ export default function Navigation() {
                       onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -700,8 +700,8 @@ export default function Navigation() {
                       onClick={() => setMobileContactOpen(!mobileContactOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -735,8 +735,8 @@ export default function Navigation() {
                       onClick={() => setMobilePropertyOpen(!mobilePropertyOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -784,8 +784,8 @@ export default function Navigation() {
                       onClick={() => setMobileResidentOpen(!mobileResidentOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black font-bold'
-                          : 'text-black font-bold hover:text-gray-600'
+                          ? 'text-black'
+                          : 'text-black hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -819,8 +819,8 @@ export default function Navigation() {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md mb-1 ${
                     isActive(link.path)
-                      ? 'text-black font-bold'
-                      : 'text-black font-bold hover:text-gray-600'
+                      ? 'text-black'
+                      : 'text-black hover:text-gray-600'
                   }`}
                 >
                   {link.label}
