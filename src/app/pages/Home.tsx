@@ -77,6 +77,50 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section className="py-20 bg-[#7FB54C]" id="why-choose">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl mb-4">Why Choose HIBRID</h2>
+            <p className="text-xl text-black max-w-2xl mx-auto">
+              OUR tech brings transparency and proof to valet trash go back to living and let us worry about the trash
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="text-center">
+              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Smartphone className="w-8 h-8 text-[#00A651]" />
+              </div>
+              <h3 className="text-xl mb-2">Technology</h3>
+              <p className="text-black">
+                Smart phone widget - Residents are notified and can request call backs when we are onsite
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Eye className="w-8 h-8 text-[#00A651]" />
+              </div>
+              <h3 className="text-xl mb-2">Transparency</h3>
+              <p className="text-black">
+                No more wonder when service will begin tenants receive real time updates when service starts and before ending
+              </p>
+            </div>
+
+            <div className="text-center">
+              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Monitor className="w-8 h-8 text-[#00A651]" />
+              </div>
+              <h3 className="text-xl mb-2">Easy Access</h3>
+              <p className="text-black">
+                Dashboard for onsite Property mangers. Geotagged proof of service violation reports and easy bulk pick up request
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* How It Works Section */}
       <section id="how-it-works" className="py-20 bg-[#7FB54C]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -84,7 +128,7 @@ export default function Home() {
           <p className="text-xl text-center text-black mb-16 max-w-3xl mx-auto">
             Our platform makes managing valet trash services simple and efficient for everyone
           </p>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {/* Step 1 */}
             <div className="text-center flex flex-col">
@@ -146,50 +190,6 @@ export default function Home() {
                   Get Started
                 </Link>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Features Section */}
-      <section className="py-20 bg-[#7FB54C]" id="why-choose">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Why Choose HIBRID</h2>
-            <p className="text-xl text-black max-w-2xl mx-auto">
-              OUR tech brings transparency and proof to valet trash go back to living and let us worry about the trash
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Smartphone className="w-8 h-8 text-[#00A651]" />
-              </div>
-              <h3 className="text-xl mb-2">Technology</h3>
-              <p className="text-black">
-                Smart phone widget - Residents are notified and can request call backs when we are onsite
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Eye className="w-8 h-8 text-[#00A651]" />
-              </div>
-              <h3 className="text-xl mb-2">Transparency</h3>
-              <p className="text-black">
-                No more wonder when service will begin tenants receive real time updates when service starts and before ending
-              </p>
-            </div>
-
-            <div className="text-center">
-              <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Monitor className="w-8 h-8 text-[#00A651]" />
-              </div>
-              <h3 className="text-xl mb-2">Easy Access</h3>
-              <p className="text-black">
-                Dashboard for onsite Property mangers. Geotagged proof of service violation reports and easy bulk pick up request
-              </p>
             </div>
           </div>
         </div>
