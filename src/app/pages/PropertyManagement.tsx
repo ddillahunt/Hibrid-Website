@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 import { Building2, Smartphone, Monitor } from 'lucide-react';
-const dashboardImage = "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=500&fit=crop";
 const resiApp1 = "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=300&h=600&fit=crop";
 const resiApp2 = "https://images.unsplash.com/photo-1551650975-87deedd944c3?w=300&h=600&fit=crop";
 
@@ -128,16 +127,8 @@ export default function PropertyManagement() {
       {/* Onsite Client Portal Section */}
       <section id="onsite-portal" className="py-20 bg-[#7FB54C] text-black">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="order-2 lg:order-1">
-              <img
-                src={dashboardImage}
-                alt="Hibrid Property Dashboard"
-                className="rounded-lg shadow-xl"
-              />
-            </div>
-
-            <div className="order-1 lg:order-2">
+          <div className="max-w-3xl mx-auto">
+            <div>
               <div className="flex items-center gap-3 mb-6">
                 <div className="bg-[#E5F8ED] p-3 rounded-lg">
                   <Monitor className="w-8 h-8 text-[#00A651]" />
