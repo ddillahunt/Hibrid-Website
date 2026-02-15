@@ -1,6 +1,16 @@
 import { Link } from 'react-router-dom';
 import { Smartphone, Eye, Monitor, MapPin } from 'lucide-react';
 import { useEffect } from 'react';
+import tnaaLogo from '../../assets/partners/tnaa.png';
+import taaLogo from '../../assets/partners/taa.png';
+import faaLogo from '../../assets/partners/faa.png';
+import aaaLogo from '../../assets/partners/aaa.png';
+import amaLogo from '../../assets/partners/ama.png';
+import aancLogo from '../../assets/partners/aanc.png';
+import scaaLogo from '../../assets/partners/scaa.png';
+import naaLogo from '../../assets/partners/naa.png';
+import chattahoocheeLogo from '../../assets/partners/chattahoochee.png';
+import atlantaLogo from '../../assets/partners/atlanta.png';
 
 export default function Home() {
   // Handle scroll to section on page load
@@ -16,17 +26,17 @@ export default function Home() {
     }
   }, []);
 
-  const partners = [
-    { abbr: 'TNAA', name: 'Tennessee Apartment Association' },
-    { abbr: 'TAA', name: 'Texas Apartment Association' },
-    { abbr: 'FAA', name: 'Florida Apartment Association' },
-    { abbr: 'AAA', name: 'Alabama Apartment Association' },
-    { abbr: 'AMA', name: 'Apartment Management Association' },
-    { abbr: 'AANC', name: 'Apartment Association of NC' },
-    { abbr: 'SCAA', name: 'SC Apartment Association' },
-    { abbr: 'NAA', name: 'National Apartment Association' },
-    { abbr: 'CHAT', name: 'Chattahoochee Tech' },
-    { abbr: 'ATL', name: 'Atlanta Apartment Association' },
+  const partnerLogos = [
+    { src: tnaaLogo, alt: 'Tennessee Apartment Association' },
+    { src: taaLogo, alt: 'Texas Apartment Association' },
+    { src: faaLogo, alt: 'Florida Apartment Association' },
+    { src: aaaLogo, alt: 'Alabama Apartment Association' },
+    { src: amaLogo, alt: 'Apartment Management Association' },
+    { src: aancLogo, alt: 'Apartment Association of NC' },
+    { src: scaaLogo, alt: 'SC Apartment Association' },
+    { src: naaLogo, alt: 'National Apartment Association' },
+    { src: chattahoocheeLogo, alt: 'Chattahoochee Tech' },
+    { src: atlantaLogo, alt: 'Atlanta Apartment Association' },
   ];
 
   return (
@@ -193,10 +203,9 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {partners.map((partner, index) => (
-              <div key={index} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center h-32 border border-gray-200">
-                <span className="text-2xl font-bold text-[#6FA03D]">{partner.abbr}</span>
-                <span className="text-xs text-gray-500 mt-2 text-center leading-tight">{partner.name}</span>
+            {partnerLogos.map((logo, index) => (
+              <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-center h-32">
+                <img src={logo.src} alt={logo.alt} className="max-w-[80%] max-h-[80px] h-auto object-contain" />
               </div>
             ))}
           </div>
