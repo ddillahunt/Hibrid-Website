@@ -5,16 +5,17 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-const tnaaLogo = "/assets/partners/tnaa.svg";
-const taaLogo = "/assets/partners/taa.svg";
-const faaLogo = "/assets/partners/faa.svg";
-const aaaLogo = "/assets/partners/aaa.svg";
-const amaLogo = "/assets/partners/ama.svg";
-const aancLogo = "/assets/partners/aanc.svg";
-const scaaLogo = "/assets/partners/scaa.svg";
-const naaLogo = "/assets/partners/naa.svg";
-const chattahoocheeLogo = "/assets/partners/chattahoochee.svg";
-const atlantaLogo = "/assets/partners/atlanta.svg";
+const basePath = import.meta.env.BASE_URL;
+const tnaaLogo = `${basePath}assets/partners/tnaa.svg`;
+const taaLogo = `${basePath}assets/partners/taa.svg`;
+const faaLogo = `${basePath}assets/partners/faa.svg`;
+const aaaLogo = `${basePath}assets/partners/aaa.svg`;
+const amaLogo = `${basePath}assets/partners/ama.svg`;
+const aancLogo = `${basePath}assets/partners/aanc.svg`;
+const scaaLogo = `${basePath}assets/partners/scaa.svg`;
+const naaLogo = `${basePath}assets/partners/naa.svg`;
+const chattahoocheeLogo = `${basePath}assets/partners/chattahoochee.svg`;
+const atlantaLogo = `${basePath}assets/partners/atlanta.svg`;
 
 export default function Home() {
   // Handle scroll to section on page load
