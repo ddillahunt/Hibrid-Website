@@ -151,8 +151,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -175,7 +175,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handleSectionNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -205,8 +205,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -229,7 +229,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handleServicesNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -259,8 +259,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -283,7 +283,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handlePorterNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -313,8 +313,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -337,7 +337,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handleAboutNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -367,8 +367,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -391,7 +391,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handleContactNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -421,8 +421,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -450,7 +450,7 @@ export default function Navigation() {
                                 setPropertyDropdownOpen(false);
                                 setPropertyDropdownLocked(false);
                               }}
-                              className="block w-full text-left px-4 py-2 text-black font-medium hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                              className="block w-full text-left px-4 py-2 text-[#00374F] font-medium hover:bg-gray-100 hover:text-gray-600 transition-colors"
                             >
                               {dropdownLink.label}
                             </Link>
@@ -458,7 +458,7 @@ export default function Navigation() {
                             <button
                               key={dropdownLink.id}
                               onClick={() => handlePropertyNav(dropdownLink.id)}
-                              className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                              className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                             >
                               {dropdownLink.label}
                             </button>
@@ -489,8 +489,8 @@ export default function Navigation() {
                       to={link.path}
                       className={`px-3 py-2 rounded-md transition-colors ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       {link.label}
@@ -513,7 +513,7 @@ export default function Navigation() {
                           <button
                             key={dropdownLink.id}
                             onClick={() => handleResidentNav(dropdownLink.id)}
-                            className="block w-full text-left px-4 py-2 text-black hover:bg-gray-100 hover:text-gray-600 transition-colors"
+                            className="block w-full text-left px-4 py-2 text-[#00374F] hover:bg-gray-100 hover:text-gray-600 transition-colors"
                           >
                             {dropdownLink.label}
                           </button>
@@ -530,8 +530,8 @@ export default function Navigation() {
                   to={link.path}
                   className={`px-3 py-2 rounded-md transition-colors ${
                     isActive(link.path)
-                      ? 'text-black'
-                      : 'text-black hover:text-gray-600'
+                      ? 'text-[#00374F]'
+                      : 'text-[#00374F] hover:text-gray-600'
                   }`}
                 >
                   {link.label}
@@ -543,7 +543,7 @@ export default function Navigation() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden p-2 rounded-md text-black hover:text-gray-600 hover:bg-gray-100"
+            className="md:hidden p-2 rounded-md text-[#00374F] hover:text-gray-600 hover:bg-gray-100"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -560,8 +560,8 @@ export default function Navigation() {
                       onClick={() => setMobileHomeOpen(!mobileHomeOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -577,7 +577,7 @@ export default function Navigation() {
                               handleSectionNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -595,8 +595,8 @@ export default function Navigation() {
                       onClick={() => setMobileServicesOpen(!mobileServicesOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -612,7 +612,7 @@ export default function Navigation() {
                               handleServicesNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -630,8 +630,8 @@ export default function Navigation() {
                       onClick={() => setMobilePorterOpen(!mobilePorterOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -647,7 +647,7 @@ export default function Navigation() {
                               handlePorterNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -665,8 +665,8 @@ export default function Navigation() {
                       onClick={() => setMobileAboutOpen(!mobileAboutOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -682,7 +682,7 @@ export default function Navigation() {
                               handleAboutNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -700,8 +700,8 @@ export default function Navigation() {
                       onClick={() => setMobileContactOpen(!mobileContactOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -717,7 +717,7 @@ export default function Navigation() {
                               handleContactNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -735,8 +735,8 @@ export default function Navigation() {
                       onClick={() => setMobilePropertyOpen(!mobilePropertyOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -754,7 +754,7 @@ export default function Navigation() {
                                 setMobilePropertyOpen(false);
                                 setIsOpen(false);
                               }}
-                              className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                              className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                             >
                               {dropdownLink.label}
                             </Link>
@@ -765,7 +765,7 @@ export default function Navigation() {
                                 handlePropertyNav(dropdownLink.id);
                                 setIsOpen(false);
                               }}
-                              className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                              className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                             >
                               {dropdownLink.label}
                             </button>
@@ -784,8 +784,8 @@ export default function Navigation() {
                       onClick={() => setMobileResidentOpen(!mobileResidentOpen)}
                       className={`flex items-center justify-between w-full px-3 py-2 rounded-md mb-1 ${
                         isActive(link.path)
-                          ? 'text-black'
-                          : 'text-black hover:text-gray-600'
+                          ? 'text-[#00374F]'
+                          : 'text-[#00374F] hover:text-gray-600'
                       }`}
                     >
                       <span>{link.label}</span>
@@ -801,7 +801,7 @@ export default function Navigation() {
                               handleResidentNav(dropdownLink.id);
                               setIsOpen(false);
                             }}
-                            className="block w-full text-left px-3 py-2 text-sm text-black hover:text-gray-600 hover:bg-gray-100 rounded-md"
+                            className="block w-full text-left px-3 py-2 text-sm text-[#00374F] hover:text-gray-600 hover:bg-gray-100 rounded-md"
                           >
                             {dropdownLink.label}
                           </button>
@@ -819,8 +819,8 @@ export default function Navigation() {
                   onClick={() => setIsOpen(false)}
                   className={`block px-3 py-2 rounded-md mb-1 ${
                     isActive(link.path)
-                      ? 'text-black'
-                      : 'text-black hover:text-gray-600'
+                      ? 'text-[#00374F]'
+                      : 'text-[#00374F] hover:text-gray-600'
                   }`}
                 >
                   {link.label}
