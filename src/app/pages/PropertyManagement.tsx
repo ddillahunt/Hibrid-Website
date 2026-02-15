@@ -23,7 +23,7 @@ export default function PropertyManagement() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9wZXJ0eSUyMG1hbmFnZW1lbnQlMjBkYXNoYm9hcmQ8ZW58MXx8fHwxNzM3MDM2NzAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Property Management Dashboard"
           className="absolute inset-0 w-full h-full object-cover"

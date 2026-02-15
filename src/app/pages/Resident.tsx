@@ -52,7 +52,7 @@ export default function Resident() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBsaXZpbmd8ZW58MXx8fHwxNzM3MDM2NzAwfDA&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Resident services"
           className="absolute inset-0 w-full h-full object-cover"

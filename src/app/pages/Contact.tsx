@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Mail, Phone, Clock, ChevronDown } from 'lucide-react';
 import { toast } from 'sonner';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -53,7 +53,7 @@ export default function Contact() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1732395805034-e0bf859665e5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjdXN0b21lciUyMHNlcnZpY2UlMjByZXByZXNlbnRhdGl2ZSUyMHNtaWxpbmd8ZW58MXx8fHwxNzY2MjM5NDI1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Customer service representative"
           className="absolute inset-0 w-full h-full object-cover"

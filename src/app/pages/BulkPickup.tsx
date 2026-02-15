@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { Package, Trash2, Sofa, Bed } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+
 
 export default function BulkPickup() {
   // Handle scroll to section on page load
@@ -21,7 +21,7 @@ export default function BulkPickup() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1541630010955-6966d6ce9178?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBmdXJuaXR1cmUlMjBjb3VjaCUyMHR2JTIwcmVtb3ZhbHxlbnwxfHx8fDE3Njg2MDM0NDB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Bulk Pickup and Junk Out Services"
           className="absolute inset-0 w-full h-full object-cover"
@@ -92,7 +92,7 @@ export default function BulkPickup() {
                 <div className="grid grid-cols-2 gap-6">
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
-                      <ImageWithFallback
+                      <img
                         src="https://images.unsplash.com/photo-1668955254766-1bb2de25cf16?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxvbGQlMjBjb3VjaCUyMGZ1cm5pdHVyZXxlbnwxfHx8fDE3Njg2MDI3ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                         alt="Furniture"
                         className="w-full h-full object-cover"
@@ -102,7 +102,7 @@ export default function BulkPickup() {
                   </div>
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
-                      <ImageWithFallback
+                      <img
                         src="https://images.unsplash.com/photo-1640003145873-712e62fe9d8d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxtYXR0cmVzcyUyMGJlZHxlbnwxfHx8fDE3Njg2MDI3ODR8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                         alt="Mattresses"
                         className="w-full h-full object-cover"
@@ -112,7 +112,7 @@ export default function BulkPickup() {
                   </div>
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
-                      <ImageWithFallback
+                      <img
                         src="https://images.unsplash.com/photo-1761933296164-38a1b6cf72e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2xsZWQlMjBjYXJwZXQlMjBydWd8ZW58MXx8fHwxNzY4NjAyNzg0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                         alt="Carpets"
                         className="w-full h-full object-cover"
@@ -122,7 +122,7 @@ export default function BulkPickup() {
                   </div>
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
-                      <ImageWithFallback
+                      <img
                         src="https://images.unsplash.com/photo-1765000884289-baee6a441acd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxob3VzZWhvbGQlMjBqdW5rJTIwaXRlbXN8ZW58MXx8fHwxNzY4NjAyNzg1fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
                         alt="More Items"
                         className="w-full h-full object-cover"

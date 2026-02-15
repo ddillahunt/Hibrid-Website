@@ -1,5 +1,5 @@
 import { Target, Users, Award, Lightbulb } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+
 import { useEffect } from 'react';
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1758518729685-f88df7890776?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB0ZWFtJTIwbWVldGluZyUyMG9mZmljZXxlbnwxfHx8fDE3NjYyMTY3OTB8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
           alt="Professional team meeting"
           className="absolute inset-0 w-full h-full object-cover"

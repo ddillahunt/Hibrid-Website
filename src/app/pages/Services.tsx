@@ -1,5 +1,5 @@
 import { Trash2, Building2, CalendarCheck, Recycle, Smartphone, Truck, Users } from 'lucide-react';
-import { ImageWithFallback } from '../components/figma/ImageWithFallback';
+
 import { useEffect } from 'react';
 
 export default function Services() {
@@ -21,7 +21,7 @@ export default function Services() {
       {/* Hero Section */}
       <section className="relative h-[400px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <ImageWithFallback
+        <img
           src="https://images.unsplash.com/photo-1755567818043-a86c648900de?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBidWlsZGluZyUyMHJlc2lkZW50aWFsfGVufDF8fHx8MTc2NjIzMzY0Nnww&ixlib=rb-4.1.0&q=80&w=1080"
           alt="Apartment building"
           className="absolute inset-0 w-full h-full object-cover"
