@@ -16,18 +16,17 @@ export default function Home() {
     }
   }, []);
 
-  const base = import.meta.env.BASE_URL;
-  const partnerLogos = [
-    { src: `${base}assets/partners/tnaa.svg`, alt: 'Tennessee Apartment Association' },
-    { src: `${base}assets/partners/taa.svg`, alt: 'TAA' },
-    { src: `${base}assets/partners/faa.svg`, alt: 'Florida Apartment Association' },
-    { src: `${base}assets/partners/aaa.svg`, alt: 'Alabama Apartment Association' },
-    { src: `${base}assets/partners/ama.svg`, alt: 'AMA' },
-    { src: `${base}assets/partners/aanc.svg`, alt: 'AANC' },
-    { src: `${base}assets/partners/scaa.svg`, alt: 'South Carolina Apartment Association' },
-    { src: `${base}assets/partners/naa.svg`, alt: 'National Apartment Association' },
-    { src: `${base}assets/partners/chattahoochee.svg`, alt: 'Chattahoochee' },
-    { src: `${base}assets/partners/atlanta.svg`, alt: 'Atlanta' },
+  const partners = [
+    { abbr: 'TNAA', name: 'Tennessee Apartment Association' },
+    { abbr: 'TAA', name: 'Texas Apartment Association' },
+    { abbr: 'FAA', name: 'Florida Apartment Association' },
+    { abbr: 'AAA', name: 'Alabama Apartment Association' },
+    { abbr: 'AMA', name: 'Apartment Management Association' },
+    { abbr: 'AANC', name: 'Apartment Association of NC' },
+    { abbr: 'SCAA', name: 'SC Apartment Association' },
+    { abbr: 'NAA', name: 'National Apartment Association' },
+    { abbr: 'CHAT', name: 'Chattahoochee Tech' },
+    { abbr: 'ATL', name: 'Atlanta Apartment Association' },
   ];
 
   return (
@@ -194,9 +193,10 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {partnerLogos.map((logo, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-center h-32">
-                <img src={logo.src} alt={logo.alt} className="max-w-[80%] max-h-[80px] h-auto object-contain" />
+            {partners.map((partner, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-md flex flex-col items-center justify-center h-32 border border-gray-200">
+                <span className="text-2xl font-bold text-[#6FA03D]">{partner.abbr}</span>
+                <span className="text-xs text-gray-500 mt-2 text-center leading-tight">{partner.name}</span>
               </div>
             ))}
           </div>
