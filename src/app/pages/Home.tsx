@@ -202,13 +202,27 @@ export default function Home() {
             <h2 className="text-4xl mb-4">Our Partners</h2>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
-            {partnerLogos.map((logo, index) => (
-              <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-center h-32">
-                <img src={logo.src} alt={logo.alt} className="max-w-[80%] max-h-[80px] h-auto object-contain" />
-              </div>
-            ))}
+          <div className="overflow-hidden">
+            <div className="flex animate-scroll gap-6" style={{ width: 'max-content' }}>
+              {[...partnerLogos, ...partnerLogos].map((logo, index) => (
+                <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-center h-32 w-48 flex-shrink-0">
+                  <img src={logo.src} alt={logo.alt} className="max-w-[80%] max-h-[80px] h-auto object-contain" />
+                </div>
+              ))}
+            </div>
           </div>
+          <style>{`
+            @keyframes scroll {
+              0% { transform: translateX(0); }
+              100% { transform: translateX(-50%); }
+            }
+            .animate-scroll {
+              animation: scroll 20s linear infinite;
+            }
+            .animate-scroll:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
         </div>
       </section>
 
