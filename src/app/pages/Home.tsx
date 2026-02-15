@@ -2,18 +2,6 @@ import { Link } from 'react-router-dom';
 import { Smartphone, Eye, Monitor, MapPin } from 'lucide-react';
 import { useEffect } from 'react';
 
-const basePath = import.meta.env.BASE_URL;
-const tnaaLogo = `${basePath}assets/partners/tnaa.svg`;
-const taaLogo = `${basePath}assets/partners/taa.svg`;
-const faaLogo = `${basePath}assets/partners/faa.svg`;
-const aaaLogo = `${basePath}assets/partners/aaa.svg`;
-const amaLogo = `${basePath}assets/partners/ama.svg`;
-const aancLogo = `${basePath}assets/partners/aanc.svg`;
-const scaaLogo = `${basePath}assets/partners/scaa.svg`;
-const naaLogo = `${basePath}assets/partners/naa.svg`;
-const chattahoocheeLogo = `${basePath}assets/partners/chattahoochee.svg`;
-const atlantaLogo = `${basePath}assets/partners/atlanta.svg`;
-
 export default function Home() {
   // Handle scroll to section on page load
   useEffect(() => {
@@ -28,17 +16,18 @@ export default function Home() {
     }
   }, []);
 
+  const base = import.meta.env.BASE_URL;
   const partnerLogos = [
-    { src: tnaaLogo, alt: 'Tennessee Apartment Association' },
-    { src: taaLogo, alt: 'TAA' },
-    { src: faaLogo, alt: 'Florida Apartment Association' },
-    { src: aaaLogo, alt: 'Alabama Apartment Association' },
-    { src: amaLogo, alt: 'AMA' },
-    { src: aancLogo, alt: 'AANC' },
-    { src: scaaLogo, alt: 'South Carolina Apartment Association' },
-    { src: naaLogo, alt: 'National Apartment Association' },
-    { src: chattahoocheeLogo, alt: 'Chattahoochee' },
-    { src: atlantaLogo, alt: 'Atlanta' },
+    { src: `${base}assets/partners/tnaa.svg`, alt: 'Tennessee Apartment Association' },
+    { src: `${base}assets/partners/taa.svg`, alt: 'TAA' },
+    { src: `${base}assets/partners/faa.svg`, alt: 'Florida Apartment Association' },
+    { src: `${base}assets/partners/aaa.svg`, alt: 'Alabama Apartment Association' },
+    { src: `${base}assets/partners/ama.svg`, alt: 'AMA' },
+    { src: `${base}assets/partners/aanc.svg`, alt: 'AANC' },
+    { src: `${base}assets/partners/scaa.svg`, alt: 'South Carolina Apartment Association' },
+    { src: `${base}assets/partners/naa.svg`, alt: 'National Apartment Association' },
+    { src: `${base}assets/partners/chattahoochee.svg`, alt: 'Chattahoochee' },
+    { src: `${base}assets/partners/atlanta.svg`, alt: 'Atlanta' },
   ];
 
   return (
