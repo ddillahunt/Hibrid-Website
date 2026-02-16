@@ -25,13 +25,13 @@ export default function About() {
           <h2 className="text-4xl mb-8 text-center">Our Story</h2>
           <div className="space-y-6 text-black text-lg">
             <p>
-              Hibrid Trash Solutions was founded with a simple mission: to make life easier for residents and property managers through reliable, professional valet trash services. We understand that managing waste in multi-family communities can be challenging, and we're here to provide a solution that works.
+              HIBRID Trash Solutions was founded with a clear objective: to bring reliability, structure, and transparency to valet trash in multifamily communities. Managing waste between residents, onsite teams, and ownership groups can quickly become operationally messy. Missed pickups, poor communication, and lack of documentation create unnecessary friction. HIBRID was built to solve that - not just with labor, but with systems.
             </p>
             <p>
-              Since our inception, we've grown from serving a handful of communities to becoming a trusted partner for property managers across the region. Our success is built on the foundation of excellent service, reliable performance, and a commitment to our communities.
+              Technology is central to how we operate. The HIBRID GO App and client portal provide real-time service notifications, geo-tagged proof of service, timestamped photo violation reports, live route monitoring, callback requests, and streamlined bulk pickup submissions. Every service night is documented. Every pickup is verifiable. We built our platform to eliminate guesswork and add true transparency to valet trash.
             </p>
             <p>
-              We're proud to employ dedicated porters who take pride in their work and understand the importance of keeping residential communities clean and well-maintained. Every member of our team is carefully selected, thoroughly trained, and committed to upholding the highest standards of service.
+              Our philosophy is simple: go back to living and let us worry about the trash. We combine efficient operations with technology-driven visibility so property managers gain confidence and residents gain convenience.
             </p>
           </div>
         </div>
@@ -46,13 +46,27 @@ export default function About() {
             <div className="flex items-start gap-4">
               <div className="flex-shrink-0">
                 <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center">
+                  <Lightbulb className="w-8 h-8 text-[#00A651]" />
+                </div>
+              </div>
+              <div>
+                <h3 className="text-xl mb-2">Innovation</h3>
+                <p className="text-black">
+                  We use technology to bring transparency and structure to valet trash. Through the HIBRID GO App, geo-tagged tracking, and real-time reporting, we eliminate guesswork and modernize a traditionally manual service. We continuously refine our systems based on performance data and client feedback to better serve the communities we support.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start gap-4">
+              <div className="flex-shrink-0">
+                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center">
                   <Target className="w-8 h-8 text-[#00A651]" />
                 </div>
               </div>
               <div>
                 <h3 className="text-xl mb-2">Excellence</h3>
                 <p className="text-black">
-                  We strive for excellence in every aspect of our service delivery.
+                  We operate with disciplined standards and clear expectations. From porter presentation to documented proof of service, excellence is not optional - it is built into our systems, training, and daily execution.
                 </p>
               </div>
             </div>
@@ -66,7 +80,7 @@ export default function About() {
               <div>
                 <h3 className="text-xl mb-2">Community Focus</h3>
                 <p className="text-black">
-                  Building strong relationships with the communities we serve.
+                  We understand that we are working inside people's homes and livelihoods. We prioritize professional conduct, strong communication with onsite teams, and service that supports the overall resident experience while protecting asset value.
                 </p>
               </div>
             </div>
@@ -80,21 +94,7 @@ export default function About() {
               <div>
                 <h3 className="text-xl mb-2">Reliability</h3>
                 <p className="text-black">
-                  Consistent, dependable service you can count on.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start gap-4">
-              <div className="flex-shrink-0">
-                <div className="bg-white w-16 h-16 rounded-full flex items-center justify-center">
-                  <Lightbulb className="w-8 h-8 text-[#00A651]" />
-                </div>
-              </div>
-              <div>
-                <h3 className="text-xl mb-2">Innovation</h3>
-                <p className="text-black">
-                  We continuously seek ways to improve our services and operations through technology. By staying current with industry best practices and listening to feedback, we evolve to better serve our communities.
+                  Consistency drives trust. Our processes, technology, and employee-ownership model are designed to ensure service is performed, documented, and verifiable every scheduled night.
                 </p>
               </div>
             </div>

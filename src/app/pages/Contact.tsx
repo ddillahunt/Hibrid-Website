@@ -300,10 +300,9 @@ export default function Contact() {
                 </p>
                 <ol className="list-decimal list-inside text-black space-y-2">
                   <li>Open the HIBRID GO app and log in to your account</li>
-                  <li>Navigate to the "Support" section</li>
-                  <li>Start a chat and upload photos</li>
-                  <li>Submit your request</li>
-                  <li>You will get a pop up that someone will reply within 24hrs</li>
+                  <li>Click the door icon</li>
+                  <li>Add Photo of missed trash</li>
+                  <li>HIBRID team member returns to get your trash</li>
                 </ol>
               </div>
             </div>

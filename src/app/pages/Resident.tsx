@@ -228,10 +228,8 @@ export default function Resident() {
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#00A651] focus:border-transparent"
               >
                 <option value="">Select a request type</option>
-                <option value="missed-pickup">Missed Pickup</option>
-                <option value="additional-service">Additional Service Request</option>
-                <option value="large-item">Large Item Disposal</option>
-                <option value="complaint">Service Complaint</option>
+                <option value="compliment">Compliment</option>
+                <option value="service-issue">Service Issue</option>
                 <option value="general">General Inquiry</option>
                 <option value="other">Other</option>
               </select>
