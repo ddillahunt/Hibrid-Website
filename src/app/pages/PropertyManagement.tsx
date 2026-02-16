@@ -132,22 +132,22 @@ export default function PropertyManagement() {
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1">Service Monitoring</h3>
-                    <p className="text-black/80">Real-time tracking of all pickups and service activities</p>
+                    <h3 className="text-xl mb-1">Nightly Proof of Service</h3>
+                    <p className="text-black/80">Geo-tagged verification for every pickup.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1">Performance Reports</h3>
-                    <p className="text-black/80">Detailed analytics and performance metrics for your property</p>
+                    <h3 className="text-xl mb-1">Photo Violation Reports</h3>
+                    <p className="text-black/80">Timestamped documentation for improper set-outs.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1">Resident Management</h3>
-                    <p className="text-black/80">Manage resident information and service preferences</p>
+                    <h3 className="text-xl mb-1">Bulk Request Management</h3>
+                    <p className="text-black/80">Submit and track bulk pickup requests with ease.</p>
                   </div>
                 </div>
               </div>
