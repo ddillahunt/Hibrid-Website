@@ -32,7 +32,7 @@ export default function BulkPickup() {
                 <h2 className="text-4xl text-black">Bulk Pickup</h2>
               </div>
               <p className="text-xl text-black mb-6">
-                Need to dispose of large items that won't fit in regular trash? Our bulk pickup service is designed to handle oversized items from your apartment with ease.
+                Need large items removed from your community? Our bulk pickup service handles mattresses, furniture, appliances, and oversized debris quickly and professionally.
               </p>
               
               <div className="space-y-4 mb-8">
@@ -67,9 +67,13 @@ export default function BulkPickup() {
               </div>
 
               <div className="bg-[#5F8A33] p-6 rounded-lg shadow-md">
-                <p className="text-lg text-black">
-                  <strong>How it works:</strong> Simply contact us to schedule a bulk pickup. Our team will coordinate a convenient time to remove your large items safely and efficiently.
-                </p>
+                <p className="text-lg text-black font-bold mb-3">How It Works:</p>
+                <ol className="text-lg text-black space-y-2 list-decimal list-inside">
+                  <li>Log into the client portal</li>
+                  <li>Upload photos of the items</li>
+                  <li>Select preferred removal timing</li>
+                  <li>HIBRID handles the rest</li>
+                </ol>
               </div>
             </div>
 
@@ -135,44 +139,52 @@ export default function BulkPickup() {
                 <h2 className="text-4xl">Junk Out Service</h2>
               </div>
               <p className="text-xl text-black mb-6">
-                Moving out or need a complete apartment cleanout? Our junk out service handles the removal of everything in your apartment, leaving it clean and ready for the next tenant.
+                Need a full unit turned fast between move-out and move-in? HIBRID delivers structured, deadline-driven junk out services designed to protect your turn timeline and NOI.
               </p>
-              
+
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 font-semibold">Complete Removal</h3>
-                    <p className="text-black/80">We remove all furniture, appliances, and personal belongings</p>
+                    <h3 className="text-xl mb-1 font-semibold">Full Unit Cleanout</h3>
+                    <p className="text-black/80">Removal of all abandoned furniture, appliances, mattresses, trash, and personal items - from units, patios, storage closets, and common areas.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 font-semibold">Fast & Efficient</h3>
-                    <p className="text-black/80">Quick turnaround times to meet your move-out deadlines</p>
+                    <h3 className="text-xl mb-1 font-semibold">Turn-Focused Execution</h3>
+                    <p className="text-black/80">Coordinated scheduling aligned with your make-ready process to avoid delays in cleaning, painting, and inspections.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 font-semibold">All Apartment Sizes</h3>
-                    <p className="text-black/80">Services available for 1, 2, and 3-bedroom apartments</p>
+                    <h3 className="text-xl mb-1 font-semibold">All Unit Types</h3>
+                    <p className="text-black/80">Studios through 3+ bedroom apartments, including multi-floor layouts.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 font-semibold">Environmentally Responsible</h3>
-                    <p className="text-black/80">We properly dispose and donate items when possible</p>
+                    <h3 className="text-xl mb-1 font-semibold">Bulk & Heavy Item Removal</h3>
+                    <p className="text-black/80">Efficient handling of large items including sectionals, dressers, refrigerators, and illegal dump-offs.</p>
                   </div>
                 </div>
-              </div>
-
-              <div className="bg-[#5F8A33] p-6 rounded-lg shadow-md">
-                <p className="text-lg text-black">
-                  <strong>Perfect for:</strong> Move-outs, estate cleanouts, property management turnovers, or any situation requiring complete apartment clearing.
-                </p>
+                <div className="flex items-start gap-3">
+                  <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
+                  <div>
+                    <h3 className="text-xl mb-1 font-semibold">Photo Documentation</h3>
+                    <p className="text-black/80">Before-and-after photos for management records and charge-back documentation.</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
+                  <div>
+                    <h3 className="text-xl mb-1 font-semibold">Responsible Disposal</h3>
+                    <p className="text-black/80">Donation and recycling when possible. Proper landfill disposal when required.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

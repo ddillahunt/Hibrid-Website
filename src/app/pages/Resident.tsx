@@ -144,7 +144,7 @@ export default function Resident() {
             <h2 className="text-4xl text-black">Submit a Request</h2>
           </div>
           <p className="text-xl text-gray-600 mb-8 text-center">
-            Have a special request or need assistance? Fill out the form below and we'll get back to you as soon as possible.
+            Need assistance? Fill out the form below and we'll get back to you as soon as possible.
           </p>
 
           <form onSubmit={handleSubmit} className="bg-[#E5F8ED] p-8 rounded-lg shadow-md">
@@ -273,7 +273,7 @@ export default function Resident() {
             <h2 className="text-4xl text-black">How to Use Valet Trash</h2>
           </div>
           <p className="text-xl text-black mb-12 text-center max-w-3xl mx-auto">
-            Follow these simple steps to make the most of your valet trash service
+            Follow these simple steps to get the most out of your HIBRID valet trash service.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
@@ -284,7 +284,7 @@ export default function Resident() {
               </div>
               <h3 className="text-xl mb-3 text-black">Bag Your Trash</h3>
               <p className="text-black">
-                Place your trash in sealed plastic bags. Make sure bags are tied securely to prevent spills.
+                Place all waste inside securely tied plastic bags. Properly tie bags to prevent leaks.
               </p>
             </div>
 
@@ -293,9 +293,9 @@ export default function Resident() {
               <div className="bg-[#7FB54C] text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 2
               </div>
-              <h3 className="text-xl mb-3 text-black">Place Outside Door</h3>
+              <h3 className="text-xl mb-3 text-black">Set It Outside Your Door</h3>
               <p className="text-black">
-                Set your bagged trash outside your apartment door by 4 PM on designated service days.
+                Place your bagged trash outside your apartment door on your community's designated service days, within the approved set-out window.
               </p>
             </div>
 
@@ -304,9 +304,9 @@ export default function Resident() {
               <div className="bg-[#7FB54C] text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 3
               </div>
-              <h3 className="text-xl mb-3 text-black">We Collect</h3>
+              <h3 className="text-xl mb-3 text-black">HIBRID Collects</h3>
               <p className="text-black">
-                Our porters will collect your trash starting at 5 PM and dispose of it properly.
+                Our trained HIBRID team collects your trash during service hours and ensures proper, responsible disposal. If your trash is ever missed, you can submit a real-time callback request directly through the HIBRID GO App.
               </p>
             </div>
 
@@ -315,9 +315,9 @@ export default function Resident() {
               <div className="bg-[#7FB54C] text-black rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 text-2xl font-bold">
                 4
               </div>
-              <h3 className="text-xl mb-3 text-black">Enjoy Clean Living</h3>
+              <h3 className="text-xl mb-3 text-black">Enjoy a Cleaner Community</h3>
               <p className="text-black">
-                Relax knowing your trash has been taken care of. No need to walk to the dumpster!
+                No trips to the dumpster. No uncertainty about service. Just reliable, documented valet trash - powered by HIBRID.
               </p>
             </div>
           </div>
@@ -325,20 +325,12 @@ export default function Resident() {
           {/* Guidelines */}
           <div className="bg-white p-8 rounded-lg shadow-md">
             <h3 className="text-2xl mb-6 text-black text-center">Important Guidelines</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="flex items-start gap-3">
                 <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h4 className="text-lg mb-1 text-black">Service Days</h4>
-                  <p className="text-black">Check your community's schedule for designated pickup days (typically Sunday-Thursday evenings)</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                <div>
-                  <h4 className="text-lg mb-1 text-black">Bag Weight Limit</h4>
-                  <p className="text-black">Keep bags under 40 lbs for safe handling by our porters</p>
+                  <p className="text-black">Check your community's schedule for designated pickup days.</p>
                 </div>
               </div>
 
@@ -346,15 +338,7 @@ export default function Resident() {
                 <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h4 className="text-lg mb-1 text-black">No Hazardous Materials</h4>
-                  <p className="text-black">Do not include chemicals, batteries, paint, or other hazardous waste</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                <div>
-                  <h4 className="text-lg mb-1 text-black">Large Items</h4>
-                  <p className="text-black">Contact us through the app for special arrangements for Bulk Pick up</p>
+                  <p className="text-black">Do not include glass, paint, or other hazardous waste.</p>
                 </div>
               </div>
 
@@ -362,15 +346,7 @@ export default function Resident() {
                 <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                 <div>
                   <h4 className="text-lg mb-1 text-black">Secure Bags Properly</h4>
-                  <p className="text-black">Tie bags tightly to prevent leaks and keep hallways clean</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
-                <div className="bg-[#7FB54C] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                <div>
-                  <h4 className="text-lg mb-1 text-black">Timely Placement</h4>
-                  <p className="text-black">Place trash out by 4 PM to ensure pickup - late bags may be missed</p>
+                  <p className="text-black">Tie bags tightly to prevent leaks and keep hallways clean.</p>
                 </div>
               </div>
             </div>

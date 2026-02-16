@@ -69,7 +69,7 @@ export default function Home() {
           <div className="text-center mb-16">
             <h2 className="text-4xl mb-4">Why Choose HIBRID</h2>
             <p className="text-xl text-black max-w-2xl mx-auto">
-              OUR tech brings transparency and proof to valet trash go back to living and let us worry about the trash
+              Our technology brings transparency and accountability to valet trash service so your team can focus on operations while we manage the trash and communicate with tenants.
             </p>
           </div>
 
@@ -80,7 +80,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl mb-2">Technology</h3>
               <p className="text-black">
-                Smart phone widget - Residents are notified and can request call backs when we are onsite
+                Smartphone-based platform that alerts residents when service is active and allows real-time callback requests. Reduced missed pickups. Fewer complaints.
               </p>
             </div>
 
@@ -90,7 +90,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl mb-2">Transparency</h3>
               <p className="text-black">
-                No more wonder when service will begin tenants receive real time updates when service starts and before ending
+                Live service notifications and geo-tagged proof of completion. No uncertainty about when service starts or ends.
               </p>
             </div>
 
@@ -100,7 +100,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl mb-2">Easy Access</h3>
               <p className="text-black">
-                Dashboard for onsite Property mangers. Geotagged proof of service violation reports and easy bulk pick up request
+                A streamlined dashboard for onsite managers with violation reporting, bulk submission tools, and documented proof of service.
               </p>
             </div>
           </div>
