@@ -2,11 +2,21 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
+  useLocation,
 } from "react-router-dom";
+import { useEffect } from "react";
 import { Toaster } from "sonner";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+
+function RouteScrollToTop() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  return null;
+}
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import BecomePorter from "./pages/BecomePorter";
@@ -21,6 +31,7 @@ import BulkPickup from "./pages/BulkPickup";
 export default function App() {
   return (
     <Router basename="/Hibrid-Website">
+      <RouteScrollToTop />
       <div className="flex flex-col min-h-screen">
         <Navigation />
         <main className="flex-grow">
