@@ -125,7 +125,7 @@ export default function PropertyManagement() {
                 <h2 className="text-4xl">Onsite Client Portal</h2>
               </div>
               <p className="text-xl text-black mb-6">
-                A comprehensive management dashboard designed specifically for property managers. Monitor services, track performance, and manage billing all in one place.
+                A comprehensive dashboard built specifically for property managers.
               </p>
               
               <div className="space-y-4 mb-8">
