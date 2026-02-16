@@ -35,29 +35,22 @@ export default function PropertyManagement() {
                 <h2 className="text-4xl text-black">HIBRID GO App</h2>
               </div>
               <p className="text-xl text-black mb-6">
-                Download our mobile app to manage your trash pickup service with ease. Get notifications, track pickups, and communicate directly with our team.
+                Manage valet trash with full visibility and control. HIBRID GO keeps residents and property teams aligned in real time - reducing complaints, missed pickups, and operational friction.
               </p>
               
               <div className="space-y-4 mb-8">
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 text-black">Real-Time Notifications</h3>
-                    <p className="text-black">Get alerts when pickup is scheduled and completed</p>
+                    <h3 className="text-xl mb-1 text-black">Real-Time Service Updates</h3>
+                    <p className="text-black">Live notifications when service begins and ends - no guessing, no confusion.</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
-                    <h3 className="text-xl mb-1 text-black">Service Requests</h3>
-                    <p className="text-black">Request additional pickups or special services instantly</p>
-                  </div>
-                </div>
-                <div className="flex items-start gap-3">
-                  <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
-                  <div>
-                    <h3 className="text-xl mb-1 text-black">Direct Communication</h3>
-                    <p className="text-black">Message our team with questions or concerns</p>
+                    <h3 className="text-xl mb-1 text-black">Call Back Requests</h3>
+                    <p className="text-black">Residents can submit a real-time callback request while our team is onsite if a pickup is missed.</p>
                   </div>
                 </div>
               </div>
