@@ -151,7 +151,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16 text-center">
-            <div className="bg-[#7FB54C] p-8 rounded-lg shadow-md inline-block">
+            <div className="p-8 inline-block">
               <h3 className="text-2xl mb-4 text-black">Ready to Get Started?</h3>
               <p className="text-lg text-black mb-6 max-w-2xl">
                 Download our apps, access the portal, or contact us to experience hassle-free valet trash service management for your property.
