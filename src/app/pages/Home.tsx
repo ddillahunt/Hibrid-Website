@@ -150,7 +150,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-16 text-center">
+          <div id="get-started" className="mt-16 text-center scroll-mt-20">
             <div className="p-8 inline-block">
               <h3 className="text-2xl mb-4 text-black">Ready to Get Started?</h3>
               <p className="text-lg text-black mb-6 max-w-2xl">
