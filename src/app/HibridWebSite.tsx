@@ -9,6 +9,7 @@ import { Toaster } from "sonner";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
+import CookieBanner from "./components/CookieBanner";
 
 function RouteScrollToTop() {
   const { pathname } = useLocation();
@@ -54,6 +55,7 @@ export default function App() {
         <Footer />
         <ScrollToTop />
         <Toaster position="top-center" richColors />
+        <CookieBanner />
       </div>
     </Router>
   );
