@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Target, Users, Award, Lightbulb } from 'lucide-react';
 
 export default function About() {
+  useEffect(() => { document.title = 'About Us | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}

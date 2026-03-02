@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Smartphone, Eye, Monitor, MapPin } from 'lucide-react';
 import tnaaLogo from '../../assets/partners/tnaa.png';
@@ -10,8 +11,11 @@ import scaaLogo from '../../assets/partners/scaa.png';
 import naaLogo from '../../assets/partners/naa.png';
 import chattahoocheeLogo from '../../assets/partners/chattahoochee.png';
 import atlantaLogo from '../../assets/partners/atlanta.png';
+import gcaaLogo from '../../assets/partners/gcaa.png';
+import heroBg from '../../assets/Multi Family.png';
 
 export default function Home() {
+  useEffect(() => { document.title = 'HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   const partnerLogos = [
     { src: tnaaLogo, alt: 'Tennessee Apartment Association' },
     { src: taaLogo, alt: 'Texas Apartment Association' },
@@ -23,6 +27,7 @@ export default function Home() {
     { src: naaLogo, alt: 'National Apartment Association' },
     { src: chattahoocheeLogo, alt: 'Chattahoochee Tech' },
     { src: atlantaLogo, alt: 'Atlanta Apartment Association' },
+    { src: gcaaLogo, alt: 'Greater Charlotte Apartment Association', large: true },
   ];
 
   return (
@@ -44,14 +49,14 @@ export default function Home() {
       <section className="relative h-[600px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
         <img
-          src="https://images.unsplash.com/photo-1638637867034-e530ad821056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBjb21wbGV4JTIwYnVpbGRpbmd8ZW58MXx8fHwxNzY2MjM0NjA3fDA&ixlib=rb-4.1.0&q=80&w=1080"
+          src={heroBg}
           alt="Multi-family apartment complex"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="relative z-20 text-center px-4">
-          <h1 className="text-5xl md:text-6xl mb-6">Technology Enabled Doorstep Trash & Waste Removal</h1>
+          <h1 className="text-5xl md:text-6xl mb-6">Technology-Enabled Doorstep Trash & Waste Removal</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Doorstep Trash removal for a multifamily community of all types including, senior living, student housing, condominiums and BTR.
+            Doorstep trash service for all multifamily housing types including senior living, student housing, condominiums, and build-to-rent communities.
           </p>
 
           <Link
@@ -161,7 +166,7 @@ export default function Home() {
                   to="/property-management#residential-app"
                   className="inline-block bg-[#6FA03D] text-black px-8 py-3 rounded-lg hover:bg-[#5F8A33] transition-colors font-semibold"
                 >
-                  HIBRID GO App
+                  Download the HIBRID GO App
                 </Link>
                 <Link
                   to="/property-management#onsite-portal"
@@ -185,14 +190,14 @@ export default function Home() {
       <section className="py-20 bg-[#7FB54C]" id="our-partners">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl mb-4">Our Partners</h2>
+            <h2 className="text-4xl mb-4">Proud Members of</h2>
           </div>
 
           <div className="overflow-hidden">
             <div className="flex animate-scroll gap-6" style={{ width: 'max-content' }}>
               {[...partnerLogos, ...partnerLogos].map((logo, index) => (
                 <div key={index} className="bg-gray-50 p-6 rounded-lg shadow-md flex items-center justify-center h-32 w-48 flex-shrink-0">
-                  <img src={logo.src} alt={logo.alt} className="max-w-[80%] max-h-[80px] h-auto object-contain" />
+                  <img src={logo.src} alt={logo.alt} className={`h-auto object-contain ${logo.large ? 'max-w-[95%] max-h-[100px]' : 'max-w-[80%] max-h-[80px]'}`} />
                 </div>
               ))}
             </div>

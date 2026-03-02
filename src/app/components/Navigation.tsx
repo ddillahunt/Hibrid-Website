@@ -33,7 +33,7 @@ export default function Navigation() {
   const homeDropdownLinks = [
     { id: 'why-choose', label: 'Why Choose Hibrid' },
     { id: 'how-it-works', label: 'How It Works' },
-    { id: 'our-partners', label: 'Our Partners' },
+    { id: 'our-partners', label: 'Proud Members of' },
     { id: 'get-started', label: 'Ready to Get Started?' },
   ];
 
@@ -59,7 +59,7 @@ export default function Navigation() {
   ];
 
   const propertyDropdownLinks = [
-    { id: 'residential-app', label: 'HIBRID GO App' },
+    { id: 'residential-app', label: 'Download the HIBRID GO App' },
     { id: 'onsite-portal', label: 'Onsite Client Portal' },
     { id: 'bulk-pickup', label: 'Bulk Pickup/Junk Out', isRoute: true },
   ];
@@ -124,9 +124,9 @@ export default function Navigation() {
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24">
           <Link to="/" className="flex items-center space-x-3">
-            <img src={logo} alt="Hibrid Trash Solutions" className="h-16 scale-x-110" />
+            <img src={logo} alt="Hibrid Trash Solutions" className="h-24 scale-x-110" />
           </Link>
 
           {/* Desktop Navigation */}

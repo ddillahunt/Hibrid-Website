@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import { DollarSign, Clock, Award, Heart } from 'lucide-react';
 const porterImage = "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=400&fit=crop";
 
 export default function BecomePorter() {
+  useEffect(() => { document.title = 'Become a Porter | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}

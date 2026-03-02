@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function RequestQuote() {
+  useEffect(() => { document.title = 'Request a Quote | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   const [formData, setFormData] = useState({
     name: '',
     title: '',

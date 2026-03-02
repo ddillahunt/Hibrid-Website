@@ -1,6 +1,8 @@
+import { useEffect } from 'react';
 import { Trash2, Building2, CalendarCheck, Recycle, Smartphone, Truck, Users } from 'lucide-react';
 
 export default function Services() {
+  useEffect(() => { document.title = 'Services | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}

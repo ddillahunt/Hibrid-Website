@@ -1,9 +1,10 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Mail, Phone, Clock, ChevronDown } from 'lucide-react';
 import { toast } from 'sonner';
 
 
 export default function Contact() {
+  useEffect(() => { document.title = 'Contact | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   const [formData, setFormData] = useState({
     name: '',
     email: '',

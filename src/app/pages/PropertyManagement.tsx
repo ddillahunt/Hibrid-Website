@@ -1,10 +1,11 @@
+import { useEffect } from 'react';
 import { Building2, Smartphone, Monitor } from 'lucide-react';
 import dashboardImage from '../../assets/dashboard.png';
 import resiApp1 from '../../assets/resi-app-1.png';
 import resiApp2 from '../../assets/resi-app-2.png';
 
 export default function PropertyManagement() {
-
+  useEffect(() => { document.title = 'Property Management | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}
@@ -32,10 +33,10 @@ export default function PropertyManagement() {
                 <div className="bg-[#E5F8ED] p-3 rounded-lg">
                   <Smartphone className="w-8 h-8 text-[#00A651]" />
                 </div>
-                <h2 className="text-4xl text-black">HIBRID GO App</h2>
+                <h2 className="text-4xl text-black">Download the HIBRID GO App</h2>
               </div>
               <p className="text-xl text-black mb-6">
-                Manage valet trash with full visibility and control. HIBRID GO keeps residents and property teams aligned in real time - reducing complaints, missed pickups, and operational friction.
+                Receive instant notifications when pickup begins and submit real-time return requests if trash is ever missed. Say goodbye to missed pickups and the back-and-forth for onsite teams.
               </p>
               
               <div className="space-y-4 mb-8">

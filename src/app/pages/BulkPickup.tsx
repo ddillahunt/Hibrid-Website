@@ -1,7 +1,9 @@
+import { useEffect } from 'react';
 import { Package, Trash2, Sofa, Bed } from 'lucide-react';
 
 
 export default function BulkPickup() {
+  useEffect(() => { document.title = 'Bulk Pickup & Junk Out | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}

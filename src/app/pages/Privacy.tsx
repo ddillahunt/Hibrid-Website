@@ -1,4 +1,7 @@
+import { useEffect } from 'react';
+
 export default function Privacy() {
+  useEffect(() => { document.title = 'Privacy Policy | HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
   return (
     <div className="min-h-screen bg-[#7FB54C]">
       {/* Hero Section */}
