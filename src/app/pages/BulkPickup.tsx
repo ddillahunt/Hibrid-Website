@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Package, Trash2, Sofa, Bed } from 'lucide-react';
+import junkAppliances from '../../assets/junk appliances.png';
 
 
 export default function BulkPickup() {
@@ -105,7 +106,7 @@ export default function BulkPickup() {
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
                       <img
-                        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                        src={junkAppliances}
                         alt="Appliances"
                         className="w-full h-full object-cover"
                       />
