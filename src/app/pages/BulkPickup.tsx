@@ -105,12 +105,12 @@ export default function BulkPickup() {
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
                       <img
-                        src="https://images.unsplash.com/photo-1761933296164-38a1b6cf72e4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxyb2xsZWQlMjBjYXJwZXQlMjBydWd8ZW58MXx8fHwxNzY4NjAyNzg0fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-                        alt="Carpets"
+                        src="https://images.unsplash.com/photo-1556911220-bff31c812dba?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080"
+                        alt="Appliances"
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="text-lg font-semibold text-black">Carpets</h4>
+                    <h4 className="text-lg font-semibold text-black">Appliances</h4>
                   </div>
                   <div className="text-center">
                     <div className="w-full h-32 rounded-lg overflow-hidden mb-4">
@@ -120,7 +120,7 @@ export default function BulkPickup() {
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <h4 className="text-lg font-semibold text-black">More Items</h4>
+                    <h4 className="text-lg font-semibold text-black">Miscellaneous</h4>
                   </div>
                 </div>
               </div>
@@ -184,7 +184,7 @@ export default function BulkPickup() {
                   <div className="bg-[#6FA03D] text-black rounded-full w-6 h-6 flex items-center justify-center flex-shrink-0 mt-1">✓</div>
                   <div>
                     <h3 className="text-xl mb-1 font-semibold">Responsible Disposal</h3>
-                    <p className="text-black/80">Donation and recycling when possible. Proper landfill disposal when required.</p>
+                    <p className="text-black/80">Donation and recycling when possible.</p>
                   </div>
                 </div>
               </div>

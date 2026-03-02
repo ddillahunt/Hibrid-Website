@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Smartphone, Eye, Monitor, MapPin } from 'lucide-react';
+import { Smartphone, Eye, Monitor } from 'lucide-react';
+import heroBg from '../../assets/Multi Family.png';
 import tnaaLogo from '../../assets/partners/tnaa.png';
 import taaLogo from '../../assets/partners/taa.png';
 import faaLogo from '../../assets/partners/faa.png';
@@ -12,10 +13,22 @@ import naaLogo from '../../assets/partners/naa.png';
 import chattahoocheeLogo from '../../assets/partners/chattahoochee.png';
 import atlantaLogo from '../../assets/partners/atlanta.png';
 import gcaaLogo from '../../assets/partners/gcaa.png';
-import heroBg from '../../assets/Multi Family.png';
+
+const heroImages = [
+  heroBg,
+  'https://images.unsplash.com/photo-1638637867034-e530ad821056?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxhcGFydG1lbnQlMjBjb21wbGV4JTIwYnVpbGRpbmd8ZW58MXx8fHwxNzY2MjM0NjA3fDA&ixlib=rb-4.1.0&q=80&w=1080',
+];
 
 export default function Home() {
   useEffect(() => { document.title = 'HIBRID NATIONAL VALET TRASH PARTNER'; }, []);
+  const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
   const partnerLogos = [
     { src: tnaaLogo, alt: 'Tennessee Apartment Association' },
     { src: taaLogo, alt: 'Texas Apartment Association' },
@@ -48,11 +61,14 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative h-[600px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <img
-          src={heroBg}
-          alt="Multi-family apartment complex"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        {heroImages.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt="Multi-family apartment complex"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
         <div className="relative z-20 text-center px-4">
           <h1 className="text-5xl md:text-6xl mb-6">Technology-Enabled Doorstep Trash & Waste Removal</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
@@ -128,7 +144,7 @@ export default function Home() {
               </div>
               <h3 className="text-2xl mb-4 text-black">Residents</h3>
               <p className="text-black mb-4 flex-grow">
-                Download the HIBRID GO App and create your account. You'll receive notifications when pick starts and be able to request real time "return request if trash is ever miss – Say good bye to missed PICK UPS!
+                Download the HIBRID GO app for pickup alerts and real-time return requests eliminating missed pickups and reducing onsite headaches.
               </p>
             </div>
 

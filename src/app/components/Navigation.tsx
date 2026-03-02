@@ -33,8 +33,6 @@ export default function Navigation() {
   const homeDropdownLinks = [
     { id: 'why-choose', label: 'Why Choose Hibrid' },
     { id: 'how-it-works', label: 'How It Works' },
-    { id: 'our-partners', label: 'Proud Members of' },
-    { id: 'get-started', label: 'Ready to Get Started?' },
   ];
 
   const servicesDropdownLinks = [
