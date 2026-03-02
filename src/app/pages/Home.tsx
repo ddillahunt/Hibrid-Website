@@ -59,21 +59,16 @@ export default function Home() {
       </div>
 
       {/* Hero Section */}
-      <section className="relative h-[600px] flex items-center justify-center text-black overflow-hidden">
+      <section className="relative h-[600px] flex items-center justify-center text-black">
         <div className="absolute inset-0 bg-white/80 z-10"></div>
-        <div
-          className="absolute inset-0 flex transition-transform duration-1000 ease-in-out"
-          style={{ transform: `translateX(-${currentImage * 100}%)` }}
-        >
-          {heroImages.map((src, index) => (
-            <img
-              key={index}
-              src={src}
-              alt="Multi-family apartment complex"
-              className="w-full h-full object-cover flex-shrink-0"
-            />
-          ))}
-        </div>
+        {heroImages.map((src, index) => (
+          <img
+            key={index}
+            src={src}
+            alt="Multi-family apartment complex"
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${index === currentImage ? 'opacity-100' : 'opacity-0'}`}
+          />
+        ))}
         <div className="relative z-20 text-center px-4">
           <h1 className="text-5xl md:text-6xl mb-6">Technology-Enabled Doorstep Trash & Waste Removal</h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
