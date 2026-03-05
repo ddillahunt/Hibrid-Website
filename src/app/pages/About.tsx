@@ -125,8 +125,8 @@ export default function About() {
                 "Hibrid is fantastic! I'd give them a 10/10. Their trash pickup is always on time and they keep our breezeways clean. Our rep is super professional and helpful. I highly recommend them."
               </p>
               <div className="border-t border-gray-200 pt-4">
-                <p className="text-gray-800">Community Manager</p>
-                <p className="text-gray-600">Aventura Dunwoody</p>
+                <p className="text-gray-800">Regional Manager</p>
+                <p className="text-gray-600">Asset Living</p>
               </div>
             </div>
           </div>
